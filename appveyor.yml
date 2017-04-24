@@ -9,7 +9,7 @@ test_script:
   - ps: .\build.ps1
 
 deploy_script:
-  - ps: Update-ModuleManifest -Path .\ChocoPackageUpdater\Get-DHCPScopePCStatus.psd1 -ModuleVersion $env:APPVEYOR_BUILD_VERSION 
+  - ps: Update-ModuleManifest -Path .Get-DHCPScopePCStatus\Get-DHCPScopePCStatus.psd1 -ModuleVersion $env:APPVEYOR_BUILD_VERSION 
 
 notifications:
 - provider: Email
